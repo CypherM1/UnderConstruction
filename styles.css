@@ -45,12 +45,19 @@ p {
     margin-bottom: 20px;
     }
 
+.loaders {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
 .loader {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
+    border: 8px solid #ffcc00;
+    border-top: 8px solid #000000;
+    border-bottom: 8px solid #000000;
     border-radius: 50%;
     width: 50px;
     height: 50px;
