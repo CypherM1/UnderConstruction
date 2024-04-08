@@ -55,14 +55,15 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 8px solid #ffcc00;
-    border-top: 8px solid #000000;
-    border-bottom: 8px solid #000000;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    height: 70px;
+    width: 70px;
     animation: spin 2s linear infinite;
     }
+
+img {
+    height: 100%;
+    width: 100%;
+}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
