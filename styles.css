@@ -2,52 +2,66 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-    background-image: linear-gradient(to bottom right, #ffffff, #505050, #505050, #ffffff);
-}
-
 body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffcc00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: rotateBackground 8s linear infinite alternate;
+        }
 
-.topBottom {
-    width: 100%;
-    height: 30%;
-    background-image: url(./pics/CautionTape.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        @keyframes rotateBackground {
+            0% {
+                background-color: #ffcc00;
+            }
+            100% {
+                background-color: #000000;
+            }
+        }
 
-h1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 55%;
-    height: 80%;
-    background-color: #fece00;
-    text-align: center;
-    border: 5px solid #222222;
-    border-radius: 25px;
-}
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffcc00;
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
-.title {
-    font-size: 4vw;
-    width: 100%;
-    overflow-wrap: normal;
-}
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-.subtitle {
-    font-size: 2vw;
-    width: 100%;
-    overflow-wrap: normal;
-}
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .construction-icon {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .loader {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
