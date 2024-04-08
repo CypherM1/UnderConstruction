@@ -46,9 +46,9 @@ body {
         }
 
         .loader {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
             border: 8px solid #f3f3f3;
             border-top: 8px solid #3498db;
             border-radius: 50%;
